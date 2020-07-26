@@ -3,39 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <link rel="stylesheet" href="css/style.css">
-  <title>Color Game</title>
-  <link rel="icone pagina" href='/img/icone.png' type="image/x-icon">
+  <title>Jogo Mario</title>
+  <link rel="shortcut icon" href="img/icone.png" type="image/x-icon">
 </head>
 <body>
-  <div id="container">
-    <header id="cabecalho-principal">
-      <div id="pontuacao-game">
-        <img src="img/moeda.png" height="20px" alt="Coin" />
-        Moedas:&nbsp;<span id="pontuacao-atual">0</span>
-      </div>
+    <div id="container">
+        <header id="cabecalho-principal">
+            <div id="pontuacao-game">
+              <img src="img/moeda.png" height="20px" alt="" srcset="">
+              Moedas:&nbsp; <span id="pontuacao-atual">0</span> 
+            </div>
 
-      <div id="nome-jogo">
-        Speech Chalenge !
-      </div>
-    </header>
-    <section id="corpo">
-      <div id="left">
-        <h3>Fale o nome da cor em inglês</h3>
-        <span id="color-box">yelow</span>
-        <div id="cor-atual">
+            <div id="nome-jogo">
+                Speech Challenge
+            </div>
+        </header>
 
-        </div>
-        <button id="btn-aswer">Responder</button>
-      </div>
-      <div id="right">
-        <img src="img/mario.png" height="390px" />
-      </div>
-    </section>
-    <footer id="footer">
-      <img src="img/logo-dio.png" height="90px"/>
-    </footer>
-  </div>
-  <script src="js/functions.js"></script>
+        <section id="corpo">
+          <div id="esquerda">
+              <h3>Say the Color</h3>
+              <span id="cor-na-caixa"></span>
+
+              <div id="cor-atual">
+
+              </div>
+
+              <button id="btn-responder">RESPONDER</button>
+
+          </div>
+          
+          <div id="direita">
+              <img src="img/mario.png" height="390px" alt="" srcset="">
+          </div>
+
+        </section>
+
+        <footer id="rodape">
+            <img src="img/logo-dio.png" height="90px" alt="" srcset="">
+        </footer>
+    </div>
+
+    
+    <script src="js/functions.js"></script>
 </body>
 </html>

@@ -1,15 +1,15 @@
 *{
   margin: 0px;
-  padding: 0px;
+  padding:0px;
   box-sizing: border-box;
 }
 
-body {
-  background-color: #b30000;
+body{
+  background-color: #b30000;  
 }
 
 header#cabecalho-principal{
-  background-color: #dddddd;
+  background-color: #dddddd ;
   width: 100%;
   height: 40px;
 
@@ -18,16 +18,17 @@ header#cabecalho-principal{
 
   justify-content: space-between;
   align-items: center;
+
 }
 
+
 #pontuacao-game{
-  background-color: #61b1ea;
+  background-color: #61B1EA;
   border-radius: 30px;
-  
+  padding: 10px;
   color: white;
-  
-  padding: 5px 60px;
-  
+  padding: 5px 50px;
+
   font-size: 20px;
   font-weight: 700;
 
@@ -50,64 +51,61 @@ header#cabecalho-principal{
 }
 
 section#corpo{
-display: flex;
-flex-direction: row;
-margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
 }
 
-section#corpo div#right{
+section#corpo div#direita{
 
-  /* pra ver onde está o bloco
-  border: 1px solid black; */
-  
-  
 }
 
-section#corpo div#left{
-  
-  /* pra ver onde está o bloco
-  border: 1px solid black; */
+section#corpo div#esquerda{
 
-  margin-left: 10px;
+
   color: white;
   display: flex;
   flex-direction: column;
   width: 60%;
+
   align-items: center;
+
 
 }
 
-section#corpo div#left div#cor-atual{
+section#corpo div#esquerda div#cor-atual{
   margin-top: 10px;
-
   height: 200px;
   width: 200px;
 
   border: 10px solid black;
   border-radius: 15px;
-  
+
 }
 
-section#corpo div#left button#btn-aswer{
+
+section#corpo div#esquerda button#btn-responder{
+
+  background-color: transparent;
+  margin-top: 10px;
+
   background-color: transparent;
   border: 2px solid white;
-  border-radius: 10px;
-
+  border-radius: 8px;
+  
   font-size: 25px;
   font-weight: bold;
-
   color: white;
-  
-  margin-top: 10px;
   padding: 15px 45px;
+
 }
 
-div#container footer#footer{
+
+div#container footer#rodape{
   background-color: blue;
   position: fixed;
   bottom: 0px;
   width: 100%;
-  
   height: 160px;
 
   display: flex;
