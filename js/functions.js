@@ -11,8 +11,11 @@ const engine = {
     'grey': '#808080',
     'pink': '#F02A7E'
   },
-  "moedas": 0
+  "moedas":0
 }
+
+const audioMoeda = new Audio('audio/moeda.mp3');
+const audioErrou = new Audio('audio/errou.mp3');
 
 function sortearCor(){
   let indexCorSorteada = Math.floor(Math.random() * engine.cores.length);
@@ -31,4 +34,18 @@ function aplicarCorNaCaixa(nomeDaCor){
   caixaDasCores.style.backgroundSize="100%";
 
   
+}
+function atualizarPontuacao(valor){
+  let pontuacao = document.getElementById('pontuacao-atual');
+  
+  engine.moedas += valor;
+
+  if (valor < 0){
+    audioErrou.play();
+  }else{
+    audioMoeda.play();
+  }
+  
+  pontuacao.innerText = engine.moedas;
+
 }
